@@ -12,28 +12,64 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 20px 35px;
-    background-color: var(--primary-color);
-    display: flex;;
-    justify-content: space-between;
-    flex-wrap: wrap;
+body {
+    color: var(--secondary-color);
+    background-color: white;
 }
 
-header h1 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 30px;
+a { 
     color: var(--secondary-color);
+    font-size: 20px;
+}
+
+section {
+    padding: 50px;
+    display: flex;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+section ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+
+/* header styles */
+header {
+    margin: auto 0;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header a {
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 2vw;
+}
+
+header div {
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    padding-left: 50px;
+}
+
+header h1 a {   
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 header nav {
-    margin: 7px 0;
+    margin: auto 50px;
+    margin-right: 70px;
 }
 
 header nav ul {
@@ -50,3 +86,60 @@ header nav ul li a {
     font-size: 1.2vw;
     border-bottom: 3px solid var(--secondary-color)
 }
+
+/* end header styles */
+
+/* footer style */
+
+/* footer {
+    padding: 50px;
+    display: flex;    
+} */
+
+
+
+/* hero style */
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero h2 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 20px 20px 0 20px;
+    flex: 0 0 auto;
+}
+
+/* hero style */
+
+/* label styles */
+
+.label {
+    width: 20%;
+    font-size: 40px;
+    text-align: right;
+    border-right: 5px solid var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* about me style */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* content style */
+
+.content {
+    text-align: center;
+    margin: auto;
+}
+
