@@ -106,6 +106,7 @@ header nav ul li a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-top: 7%;
 }
 
 .hero h2 {
@@ -139,7 +140,9 @@ header nav ul li a {
 /* content style */
 
 .content {
-    text-align: center;
-    margin: auto;
+    text-align: left;
+    margin: auto auto auto 2%;
+    flex: 0 0 70%;
+    display: flex;
 }
 
