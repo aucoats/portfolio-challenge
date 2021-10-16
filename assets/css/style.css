@@ -161,9 +161,26 @@ content a {
     background-position: center;
     background-size: cover;
     padding: 30%;
+    position: relative;
     display: flex;
     flex: 0 0 100%;
     margin: auto;
     flex-wrap: wrap;
+}
+
+.project-title {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 20%;
+    padding-left: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    text-align: center;
+}
+
+.project-title h1 {
+    text-decoration: none;
+    font-size: 2.5vw;
 }
 
