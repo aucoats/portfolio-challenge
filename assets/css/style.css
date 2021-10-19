@@ -139,7 +139,7 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-/* content style */
+/* general content style */
 
 .content {
     text-align: left;
@@ -147,25 +147,49 @@ header nav ul li a {
     flex: 0 0 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.content p {
+    padding-right: 50px;
 }
 
 /* content a {
     width: 50%;
 } */
 
-.primary-project-link {
-    flex: 0 0 80%;
-    padding: 10px;
+/* project link/images style */
+.pink-project {
+    /* flex: 0 0 80%;
+    padding: 10px; */
+    background-image: url(../images/primary-project.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 300px;
+    position: relative;
+    display: flex;
+    margin: 2px;
+    flex: 0 1 1000px;
+    flex-wrap: wrap;
 }
 
-.project-link {
-    flex: 1 0 20%;
+.blue-project {
+    /* flex: 1 0 20%;
     margin: 2px 2px 0 0;
-    padding: 10px;
+    padding: 10px; */
+    background-image: url(../images/project2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 142.5px;
+    position: relative;
+    display: flex;
+    flex: 0 0 499px;
+    margin: 2px;
+    flex-wrap: wrap;
+    display: inline-block;
 }
 
-.primary-project {
+/* .primary-project {
     background-image: url(../images/primary-project.jpg);
     background-position: center;
     background-size: cover;
@@ -175,37 +199,28 @@ header nav ul li a {
     flex: 0 0 100%;
     width: 100;
     flex-wrap: wrap;
-}
+} */
 
-.project2 {
-    background-image: url(../images/project2.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 15%;
-    position: relative;
-    display: flex;
-    flex: 1 0 auto;
-    width: 100%;
-    margin: 2px;
-    flex-wrap: wrap;
-    display: inline-block;
-}
+/* .project2 { */
+    /*  */
+/* } */
 
-.project3 {
+.green-project {
     background-image: url(../images/project3.jpg);
     background-position: center;
     background-size: cover;
-    padding: 15%;
+    padding: 142.5px;
     position: relative;
     display: flex;
-    flex: 1 0 auto;
-    width: 100%;
-    margin: 2px;
+    flex: 0 0 499px;
+    margin: 2px 2px 2px 0;
     flex-wrap: wrap;
     display: inline-block;
 }
+   
 
-.project-title {
+/* project title styles */
+.primary-project-title {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     width: 20%;
@@ -216,8 +231,22 @@ header nav ul li a {
     text-align: center;
 }
 
-.project-title h1 {
+.primary-project-title h1 {
     text-decoration: none;
     font-size: 2.5vw;
+}
+
+.project-title {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-left: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+.project-title h1 {
+    text-decoration: none;
+    font-size: 2.0vw;
 }
 
