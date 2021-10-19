@@ -43,7 +43,7 @@ section ul li {
 /* header styles */
 header {
     margin: auto 0;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -79,14 +79,14 @@ header nav ul {
     justify-content: space-between;
     align-items: flex-end;
     list-style: none;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 header nav ul li a {
     padding: 10px 15px;
     margin: 5px;
     font-size: 20px;
-    border-bottom: 3px solid var(--secondary-color)
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 /* end header styles */
@@ -162,6 +162,7 @@ header nav ul li a {
 .pink-project {
     /* flex: 0 0 80%;
     padding: 10px; */
+    
     background-image: url(../images/primary-project.jpg);
     background-position: center;
     background-size: cover;
@@ -173,6 +174,7 @@ header nav ul li a {
     flex: 0 1 1000px;
     flex-wrap: wrap;
     opacity: 0.7;
+    
 }
 
 .pink-project:hover {
@@ -305,3 +307,143 @@ header nav ul li a {
     font-size: 1.5vw;
 }
 
+
+/* media queries */
+@media screen and (max-width:980px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        
+    }
+
+    header div {
+        padding: 0;
+    }
+
+    header h1 {
+        padding: 0;
+    }
+
+    header a {
+        padding: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        flex: 0 0 auto;
+    }
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 20px;
+        border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .label {
+        width: 10%;
+        font-size: 2vw;
+    }
+
+    .pink-project {
+        margin: 2px auto;
+    }
+    
+    .blue-project {
+        flex: 0 0 100%;
+        margin: 2px auto;
+    }
+
+    .green-project {
+        flex: 0 0 100%;
+        margin: 2px auto;
+    }
+    
+    .seo {
+        flex: 0 0 100%;
+        margin: 2px auto;
+    }
+
+    .run-buddy {
+        flex: 0 0 100%;
+        margin: 2px auto;
+    }
+
+    .project-title {
+        padding-left: 10%;
+        position: absolute;
+        left: 0;
+        bottom: 20%;
+        opacity: 1;
+    }
+    
+    .project-title h1 {
+        text-decoration: none;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+        header {
+            justify-content: center;
+            padding: 20px
+        }
+
+        header div {
+            background-color: var(--primary-color);
+            margin: auto;
+            text-align: center;
+        }
+
+        header h1 a {
+            color: var(--secondary-color);
+            
+        }
+
+        header nav {
+            justify-content: center;
+            margin: auto;
+        }
+
+        header nav ul li a {
+            font-size: 2vw;
+        }
+
+        .hero {
+            background-attachment: fixed;
+        }
+
+        .hero h2 {
+            background-image: url(../images/hero.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-shadow: 1px 1px 1px var(--secondary-color);
+        }
+
+        section {
+            text-align: center;
+            justify-content: center;
+        } 
+
+        /* STOPPED HERE  */
+        .label {
+            width: 70%;
+            font-size: 1.5vw;
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            border-right: 0px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+}
