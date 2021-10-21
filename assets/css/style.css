@@ -164,6 +164,7 @@ header nav ul li a {
     padding: 10px; */
     
     background-image: url(../images/primary-project.jpg);
+    background-color: rgba(255,0,0, .5);
     background-position: center;
     background-size: cover;
     padding: 200px;
@@ -179,8 +180,10 @@ header nav ul li a {
 
 .pink-project:hover {
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     opacity: 1.0;
 }
+
 
 .blue-project {
     /* flex: 1 0 20%;
@@ -201,6 +204,7 @@ header nav ul li a {
 
 .blue-project:hover {
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     opacity: 1.0;
 }
 
@@ -236,6 +240,7 @@ header nav ul li a {
 
 .green-project:hover {
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     opacity: 1.0;
 }
    
@@ -255,6 +260,7 @@ header nav ul li a {
 
 .seo:hover {
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     opacity: 1.0;
 }
 
@@ -274,6 +280,7 @@ header nav ul li a {
 
 .run-buddy:hover {
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     opacity: 1.0;
 }
 
@@ -285,7 +292,7 @@ header nav ul li a {
     position: absolute;
     left: 0;
     bottom: 20%;
-    opacity: 1;
+    opacity: 2;
 }
 
 .primary-project-title h1 {
@@ -416,34 +423,53 @@ header nav ul li a {
         }
 
         .hero {
+            background-image: url(../images/hero.jpg);
+            background-size: cover;
+            background-position: 80%;
             background-attachment: fixed;
         }
 
         .hero h2 {
             background-image: url(../images/hero.jpg);
-            background-position: center;
             background-size: cover;
+            background-position: 80%;
             background-attachment: fixed;
             text-shadow: 1px 1px 1px var(--secondary-color);
+            font-size: 20px;
         }
 
         section {
-            text-align: center;
+            flex-direction: column;
             justify-content: center;
         } 
 
         /* STOPPED HERE  */
         .label {
-            width: 70%;
-            font-size: 1.5vw;
+            width: 100%;
+            font-size: 2vw;
             text-align: center;
             border-bottom: 2px solid var(--secondary-color);
             border-right: 0px;
             padding: 10px;
-            display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        .content {
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            font-size: 1.7vw;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .content p {
+            width: 100%;
+            margin: 5px;
+            padding: 10px;
+
+        }
 
 }
