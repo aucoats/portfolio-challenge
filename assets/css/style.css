@@ -140,6 +140,7 @@ header nav ul li a {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .about-me-content img {
