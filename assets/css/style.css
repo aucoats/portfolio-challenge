@@ -122,10 +122,8 @@ header nav ul li a {
 }
 
 
-/* general content style */
-
+/* content style */
 .content {
-    text-align: left;
     margin: auto auto auto 2%;
     flex: 0 0 80%;
     display: flex;
@@ -138,11 +136,28 @@ header nav ul li a {
     width: 90%;
 }
 
+.about-me-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-content img {
+    flex: 0 2 10%;
+    height: 150px;
+}
+
+.about-me-content p {
+    padding-right: 50px;
+    width: 80%;
+}
 
 
 /* project style */
 .pink-project {
     background-image: url(../images/primary-project.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
     background-position: center;
     background-size: cover;
     padding: 200px;
@@ -151,20 +166,20 @@ header nav ul li a {
     position: relative;
     display: flex;
     flex: 2 1 1000px;
-    flex-wrap: wrap;
-    opacity: 0.9;
-    
+    flex-wrap: wrap;  
 }
 
 .pink-project:hover {
     transition: all .5s ease-in-out;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 
 .blue-project {
     background-image: url(../images/project2.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
     background-position: center;
     background-size: cover;
     padding: 142.5px;
@@ -173,17 +188,18 @@ header nav ul li a {
     flex: 1 1 499px;
     height: 200px;
     margin: 2px;
-    opacity: 0.9;
 }
 
 .blue-project:hover {
     transition: all .5s ease-in-out;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .green-project {
     background-image: url(../images/project3.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
     background-position: center;
     background-size: cover;
     padding: 142.5px;
@@ -192,17 +208,18 @@ header nav ul li a {
     flex: 1 1 499px;
     height: 200px;
     margin: 2px 2px 2px 0;
-    opacity: 0.9;
 }
 
 .green-project:hover {
     transition: all .5s ease-in-out;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
    
 .seo {
     background-image: url(../images/horiseon.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
     background-position: center;
     background-size: cover;
     padding: 142.5px;
@@ -211,17 +228,18 @@ header nav ul li a {
     flex: 1 1 499px;
     height: 200px;
     margin: 2px;
-    opacity: 0.9;
 }
 
 .seo:hover {
     transition: all .5s ease-in-out;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .run-buddy {
     background-image: url(../images/run-buddy.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
     background-position: center;
     background-size: cover;
     padding: 142.5px;
@@ -230,13 +248,12 @@ header nav ul li a {
     flex: 1 1 499px;
     height: 200px;
     margin: 2px 2px 2px 0;
-    opacity: 0.9;
 }
 
 .run-buddy:hover {
     transition: all .5s ease-in-out;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* project title styles */
@@ -421,6 +438,23 @@ header nav ul li a {
             flex: 1 0 100%;
             margin: auto;
             font-size: 3vw;
+            padding: 10px;
+        }
+
+        .about-me-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-me-content img {
+            flex: 0 0 200px;
+            /* height: 150px; */
+        }
+
+        .about-me-content p {
+            margin: auto;
+            flex: 1 0 100%;
+            font-size: 4vw;
             padding: 10px;
         }
 
