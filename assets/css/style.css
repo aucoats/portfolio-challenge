@@ -166,7 +166,12 @@ header nav ul li a {
     position: relative;
     display: flex;
     flex: 2 1 1000px;
+<<<<<<< HEAD
     flex-wrap: wrap;  
+=======
+    flex-wrap: wrap;
+    opacity: 0.9;
+>>>>>>> 3f7eb3535c056cc855df225a89c6d051a0f7b538
 }
 
 .pink-project:hover {
