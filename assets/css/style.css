@@ -156,7 +156,7 @@ header nav ul li a {
 
 /* project style */
 .pink-project {
-    background-image: url(../images/primary-project.jpg);
+    background-image: url(../images/treaddit.png);
     background-position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: color;
@@ -179,7 +179,7 @@ header nav ul li a {
 
 
 .blue-project {
-    background-image: url(../images/project2.jpg);
+    background-image: url(../images/primary-project.jpg);
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: color;
     background-position: center;
